@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webhence - Premium Fashion Collection</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- AOS Animation Library CSS (optional, if you want animations) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Bootstrap 5 JS Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Css -->
+     <link rel="stylesheet" href="style.css">
+    
+
+  
+</head>
+
+<body>
+    <!-- Preloader -->
+    <!-- <div id="preloader">
+        <div class="preloader-spinner"></div>
+    </div> -->
+
+    <!-- Portfolio Modal Popup -->
+    <div id="portfolioModal" class="portfolio-modal">
+        <div class="portfolio-modal-content">
+            <button class="portfolio-modal-close" id="portfolioModalClose" aria-label="Close">&times;</button>
+            <div id="portfolioModalInner" class="portfolio-modal-inner"></div>
+        </div>
+    </div>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="images/LOGO-Webhence.webp" alt="Webhence Logo" style="width:150px">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#why-choose-us">Why Choose Us</a>
+                    </li> -->
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#who-is-this-for">Who Is This For</a>
+                    </li> -->
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#what-you-get">What You’ll Get</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#our-process">Our Process</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a  href="#contact" class="btn btn-primary  d-none d-md-inline-block">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero text-center">
+        <div class="container hero-content">
+            <div data-aos="fade-up">
+                <h1>Launch Your Online Store with a Stunning Website</h1>
+                <p>We design and sell high-performing eCommerce websites that help you attract customers, boost sales, and grow your business.</p>
+                <a href="#products" class="btn btn-light me-3 shop-collection">Shop Collection</a>
+                <a href="#categories" class="btn btn-light">Get Your Store Today </a>
+            </div>
+        </div>
+    </section>
+    </section>
+
+
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio py-5 bg-white">
+        <div class="container">
+            <div class="section-title text-center mb-5" data-aos="fade-up">
+                <h2 class="fw-bold">Our Portfolio</h2>
+                <p class="lead">Showcasing our best ecommerce website projects</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <!-- Portfolio Item 1 -->
+                <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="portfolio-card position-relative overflow-hidden rounded shadow-lg">
+                        <img src="images/Fashion-Theme.png" class="img-fluid portfolio-img"
+                            alt="Ecommerce Website 1" style="height:220px; width:100%; object-fit: cover;">
+
+                        <div
+                            class="portfolio-overlay d-flex flex-column justify-content-center align-items-center text-center">
+                            <h5 class="text-white mb-2">Fashion Store</h5>
+                            <a href="#" class="btn btn-light btn-sm rounded-pill">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio Item 2 -->
+                <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="portfolio-card position-relative overflow-hidden rounded shadow-lg">
+                        <img src="images/webhence2.png" class="img-fluid w-100 portfolio-img"
+                            alt="Ecommerce Website 2" style="height:220px; object-fit: cover;">
+                        <div
+                            class="portfolio-overlay d-flex flex-column justify-content-center align-items-center text-center">
+                            <h5 class="text-white mb-2">Jewelry Shop</h5>
+                            <a href="#" class="btn btn-light btn-sm rounded-pill">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio Item 3 -->
+                <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="portfolio-card position-relative overflow-hidden rounded shadow-lg">
+                        <img src="images/Responsive-Shopify-Fashion-Theme.png" class="img-fluid w-100 portfolio-img"
+                            alt="Ecommerce Website 3" style="height:220px; object-fit: cover;">
+                        <div
+                            class="portfolio-overlay d-flex flex-column justify-content-center align-items-center text-center">
+                            <h5 class="text-white mb-2">Accessories Store</h5>
+                            <a href="#" class="btn btn-light btn-sm rounded-pill">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+    </section>
+
+
+
+<!-- Why Choose Us Section -->
+<section id="why-choose-us" class="py-5 bg-white">
+    <div class="container">
+        <div class="section-title" data-aos="fade-up">
+            <h2>Why Choose Us</h2>
+            <p>Discover the advantages of our ready-to-launch eCommerce websites</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="feature-card h-100">
+                    <h5 class="mb-3" style="color: var(--primary);">
+                        <i class="fas fa-paint-brush me-2"></i>Custom Design
+                    </h5>
+                    <p>Tailored websites to match your brand identity.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="feature-card h-100">
+                    <h5 class="mb-3" style="color: var(--primary);">
+                        <i class="fas fa-cogs me-2"></i>Easy Management
+                    </h5>
+                    <p>Manage products & orders without coding.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="feature-card h-100">
+                    <h5 class="mb-3" style="color: var(--primary);">
+                        <i class="fas fa-lock me-2"></i>Secure Payments
+                    </h5>
+                    <p>Payment gateways: PayPal, Stripe, Razorpay, UPI.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="feature-card h-100">
+                    <h5 class="mb-3" style="color: var(--primary);">
+                        <i class="fas fa-tachometer-alt me-2"></i>Fast Loading
+                    </h5>
+                    <p>Optimized for conversions & SEO ranking.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                <div class="feature-card h-100">
+                    <h5 class="mb-3" style="color: var(--primary);">
+                        <i class="fas fa-chart-line me-2"></i>Scalable Solution
+                    </h5>
+                    <p>Expand from 10 to 10,000 products easily.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                <div class="feature-card h-100">
+                    <h5 class="mb-3" style="color: var(--primary);">
+                        <i class="fas fa-bullhorn me-2"></i>Marketing Ready
+                    </h5>
+                    <p>SEO, social media, and email marketing integrations.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+   <!-- Who Is This For Section -->
+<section id="who-is-this-for" class="py-5 bg-white">
+    <div class="container">
+        <div class="section-title text-center mb-5" data-aos="fade-up">
+            <h2 class="fw-bold">Who Is This For?</h2>
+        </div>
+        <div class="row justify-content-center g-4">
+            <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="card h-100 shadow-lg border-0 text-center">
+                    <div class="card-body py-4">
+                        <div style="font-size:2.5rem;"><i class="fa-solid fa-shirt"></i></div>
+                        <h5 class="card-title mt-3" style="color:var(--primary);">Fashion & Apparel Stores</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="card h-100 shadow-lg border-0 text-center">
+                    <div class="card-body py-4">
+                        <div style="font-size:2.5rem;"><i class="fa-solid fa-laptop-medical"></i></div>
+                        <h5 class="card-title mt-3" style="color:var(--primary);">Electronics Shops</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="card h-100 shadow-lg border-0 text-center">
+                    <div class="card-body py-4">
+                        <div style="font-size:2.5rem;"><i class="fa-solid fa-basket-shopping"></i></div>
+                        <h5 class="card-title mt-3" style="color:var(--primary);">Food & Grocery Outlets</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="card h-100 shadow-lg border-0 text-center">
+                    <div class="card-body py-4">
+                        <div style="font-size:2.5rem;"><i class="fa-brands fa-product-hunt"></i></div>
+                        <h5 class="card-title mt-3" style="color:var(--primary);">Cosmetics & Skincare Brands</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="500">
+                <div class="card h-100 shadow-lg border-0 text-center">
+                    <div class="card-body py-4">
+                        <div style="font-size:2.5rem;">🛋</div>
+                        <h5 class="card-title mt-3" style="color:var(--primary);">Home Decor & Furniture Stores</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="600">
+                <div class="card h-100 shadow-lg border-0 text-center">
+                    <div class="card-body py-4">
+                        <div style="font-size:2.5rem;"><i class="fa-solid fa-user-tie"></i></div>
+                        <h5 class="card-title mt-3" style="color:var(--primary);">Any Local Business Going Online</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+  <!-- What You’ll Get Section -->
+<section id="what-you-get" class="what-you-get py-5 bg-light">
+    <div class="container">
+        <div class="section-title" data-aos="fade-up">
+            <h2>What You’ll Get</h2>
+            <p>Everything you need for a powerful eCommerce website</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="card h-100 shadow-lg border-0 what-you-get-card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title" style="color: var(--primary);">
+                            <i class="fas fa-paint-brush me-2"></i>Custom Design
+                        </h5>
+                        <p class="card-text">Tailored websites to match your brand identity.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card h-100 shadow-lg border-0 what-you-get-card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title" style="color: var(--primary);">
+                            <i class="fas fa-cogs me-2"></i>Easy Management
+                        </h5>
+                        <p class="card-text">Manage products & orders without coding.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="card h-100 shadow-lg border-0 what-you-get-card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title" style="color: var(--primary);">
+                            <i class="fas fa-lock me-2"></i>Secure Payments
+                        </h5>
+                        <p class="card-text">Payment gateways: PayPal, Stripe, Razorpay, UPI.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="card h-100 shadow-lg border-0 what-you-get-card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title" style="color: var(--primary);">
+                            <i class="fas fa-tachometer-alt me-2"></i>Fast Loading
+                        </h5>
+                        <p class="card-text">Optimized for conversions & SEO ranking.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                <div class="card h-100 shadow-lg border-0 what-you-get-card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title" style="color: var(--primary);">
+                            <i class="fas fa-chart-line me-2"></i>Scalable Solution
+                        </h5>
+                        <p class="card-text">Expand from 10 to 10,000 products easily.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                <div class="card h-100 shadow-lg border-0 what-you-get-card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title" style="color: var(--primary);">
+                            <i class="fas fa-bullhorn me-2"></i>Marketing Ready
+                        </h5>
+                        <p class="card-text">SEO, social media, and email marketing integrations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Portfolio Image Modal -->
+    <div id="portfolioModal" class="portfolio-modal">
+        <div class="portfolio-modal-content" style="overflow-y: auto; max-height:80vh; width:100%;">
+            <button class="portfolio-modal-close" id="portfolioModalClose" aria-label="Close">&times;</button>
+            <div id="portfolioModalImages"
+                style="display: flex; flex-direction: column; align-items: center; gap: 32px; width:100%;">
+                <!-- Images will be injected here -->
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <!-- Pricing Plans -->
+    <section id="pricing" class="py-5 bg-white">
+        <div class="container">
+            <div class="section-title text-center mb-5" data-aos="fade-up">
+                <h2 class="fw-bold"
+                    style="background: linear-gradient(90deg, var(--primary) 40%, var(--secondary) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
+                    Choose Your Store Plan</h2>
+                <p class="lead" style="color: #444;">Flexible pricing for every stage of your business</p>
+            </div>
+            <div class="row justify-content-center" >
+                <!-- Starter Store -->
+                <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="card pricing-card border-0 h-100 shadow-lg position-relative"
+                        style="background: linear-gradient(135deg, #f5f5f5 80%, #e0e0e0 100%);">
+                        <div class="card-body text-center py-3">
+                            <div class="mb-3">
+                                <span class="pricing-icon d-inline-block mb-2"
+                                    style="background: linear-gradient(120deg, var(--primary), var(--secondary)); box-shadow: 0 4px 24px rgba(20,20,20,0.18); border-radius: 50%; padding: 18px;">
+                                    <i class="fas fa-store fa-2x text-white"></i>
+                                </span>
+                            </div>
+                            <h3 class="fw-bold mb-2" style="color: var(--primary);">Starter Store</h3>
+                            <p class="display-6 fw-bold mb-3" style="color: var(--primary);">₹14,999</p>
+                            <ul class="list-unstyled mb-4 text-center mx-auto" style="max-width: 220px;">
+                                <li>Up to 50 products</li>
+                                <li>Basic features</li>
+                                <li>Responsive design</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-primary rounded-pill px-4 py-2 shadow-sm">Get Started</a>
+                        </div>
+                        <div id="pricing-ribbon-1" class="pricing-ribbon  bg-success text-white px-3 py-1 position-absolute top-0 start-50 translate-middle rounded-pill shadow"
+                            style="font-size:0.95rem;">Best for Beginners</div>
+                    </div>
+                </div>
+                <!-- Growth Store -->
+                <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="card pricing-card border-0 h-100 shadow-lg position-relative"
+                        style="background: linear-gradient(135deg, #f5f5f5 80%, #e0e0e0 100%);">
+                        <div class="card-body text-center py-3">
+                            <div class="mb-3">
+                                <span class="pricing-icon d-inline-block mb-2"
+                                    style="background: linear-gradient(120deg, var(--primary), var(--secondary)); box-shadow: 0 4px 24px rgba(20,20,20,0.18); border-radius: 50%; padding: 18px;">
+                                    <i class="fas fa-chart-line fa-2x text-white"></i>
+                                </span>
+                            </div>
+                            <h3 class="fw-bold mb-2" style="color: var(--primary);">Growth Store</h3>
+                            <p class="display-6 fw-bold mb-3" style="color: var(--primary);">₹29,999</p>
+                            <ul class="list-unstyled mb-4 text-center mx-auto" style="max-width: 220px;">
+                                <li>Up to 500 products</li>
+                                <li>Extra features</li>
+                                <li>SEO & marketing tools</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-primary rounded-pill px-4 py-2 shadow-sm">Upgrade Now</a>
+                        </div>
+                        <div class="pricing-ribbon bg-primary text-white px-3 py-1 position-absolute top-0 start-50 translate-middle rounded-pill shadow"
+                            style="font-size:0.95rem;">Most Popular</div>
+                    </div>
+                </div>
+                <!-- Premium Store -->
+                <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="card pricing-card border-0 h-100 shadow-lg position-relative"
+                        style="background: linear-gradient(135deg, #f5f5f5 80%, #e0e0e0 100%);">
+                        <div class="card-body text-center py-3">
+                            <div class="mb-3">
+                                <span class="pricing-icon d-inline-block mb-2"
+                                    style="background: linear-gradient(120deg, var(--primary), var(--secondary)); box-shadow: 0 4px 24px rgba(20,20,20,0.18); border-radius: 50%; padding: 18px;">
+                                    <i class="fas fa-gem fa-2x text-white"></i>
+                                </span>
+                            </div>
+                            <h3 class="fw-bold mb-2" style="color: var(--primary);">Premium Store</h3>
+                            <p class="display-6 fw-bold mb-3" style="color: var(--primary);">Custom Price</p>
+                            <ul class="list-unstyled mb-4 text-center mx-auto" style="max-width: 220px;">
+                                <li>Advanced features</li>
+                                <li>Marketplace setup</li>
+                                <li>Dedicated support</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-primary rounded-pill px-4 py-2 shadow-sm">Contact Us</a>
+                        </div>
+                        <div class="pricing-ribbon bg-dark text-white px-3 py-1 position-absolute top-0 start-50 translate-middle rounded-pill shadow"
+                            style="font-size:0.95rem;">For Enterprises</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Our Process Section -->
+    <section id="our-process" class="py-5 bg-light">
+        <div class="container">
+            <div class="section-title text-center mb-5" data-aos="fade-up">
+                <h2 class="fw-bold"> Our Process</h2>
+            </div>
+            <div class="row justify-content-center g-4">
+                <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 shadow-lg border-0 text-center">
+                        <div class="card-body py-4">
+                            <h5 class="card-title mt-3" style="color:var(--primary);">Book a Free Call</h5>
+                            <p class="card-text">Tell us about your business.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 shadow-lg border-0 text-center">
+                        <div class="card-body py-4">
+                            <h5 class="card-title mt-3" style="color:var(--primary);">We Design & Develop</h5>
+                            <p class="card-text">Your store is ready in 7-14 days.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 shadow-lg border-0 text-center">
+                        <div class="card-body py-4">
+                            <h5 class="card-title mt-3" style="color:var(--primary);">Launch & Start Selling</h5>
+                            <p class="card-text">Begin accepting online orders instantly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-5 testimonials">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Customer Reviews</h2>
+                <p>See what our customers have to say about our products and service</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4 d-flex" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-card w-100">
+                        <div>
+                            <div class="testimonial-text">
+                                <p>The quality of the dress I purchased exceeded my expectations. It fits perfectly and the fabric is luxurious!</p>
+                            </div>
+                        </div>
+                        <div class="client-info">
+                            <div class="client-img">SD</div>
+                            <div class="flex-grow-1">
+                                <h5 class="mb-1">Sarah Davis</h5>
+                                <p class="mb-0">Verified Customer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 d-flex" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-card w-100">
+                        <div>
+                            <div class="testimonial-text">
+                                <p>Fast shipping and excellent customer service. The jacket I ordered is now my favorite piece in my wardrobe.</p>
+                            </div>
+                        </div>
+                        <div class="client-info">
+                            <div class="client-img">MJ</div>
+                            <div class="flex-grow-1">
+                                <h5 class="mb-1">Michael Johnson</h5>
+                                <p class="mb-0">Verified Customer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 d-flex" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-card w-100">
+                        <div>
+                            <div class="testimonial-text">
+                                <p>I absolutely love the jewelry I purchased. It's elegant, well-made, and I receive compliments every time I wear it.</p>
+                            </div>
+                        </div>
+                        <div class="client-info">
+                            <div class="client-img">ER</div>
+                            <div class="flex-grow-1">
+                                <h5 class="mb-1">Emily Roberts</h5>
+                                <p class="mb-0">Verified Customer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter" id="contact">
+        <div class="container text-center" data-aos="fade-up">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p class="mb-4">Get the latest updates on new products, special offers, and fashion tips.</p>
+            <form class="row g-3 justify-content-center">
+                <div class="col-md-6">
+                    <input type="email" class="form-control form-control-lg" placeholder="Your Email Address">
+                </div>
+                <div class="col-md-2">
+                    <button type="submit" class="btn btn-light btn-lg w-100">Subscribe</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 style="padding:10px; background-color: #fff; border-radius: 20px; display: inline; " > <img src="images/LOGO-Webhence.webp" alt="" style="width: 150px;"></h5>
+                    <p class="mt-3">Providing high-quality fashion pieces to help you express your unique style and confidence.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 mb-4">
+                    <h5>Company</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Our Process</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 mb-4">
+                    <h5>Contact Info</h5>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Jaipur, Rajasthan 302003</li>
+                        <li><i class="fas fa-phone me-2"></i> +91 90574 08915</li>
+                        <li><i class="fas fa-envelope me-2"></i>  info@webhence.com</li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; Built by Humans (and Coffee) @ WebHence</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Portfolio Modal Popup Functionality
+        document.addEventListener('DOMContentLoaded', function () {
+            var portfolioCards = document.querySelectorAll('.portfolio-card');
+            var portfolioModal = document.getElementById('portfolioModal');
+            var portfolioModalInner = document.getElementById('portfolioModalInner');
+            var portfolioModalClose = document.getElementById('portfolioModalClose');
+
+            function disableBodyScroll() {
+                document.body.style.overflow = 'hidden';
+            }
+            function enableBodyScroll() {
+                document.body.style.overflow = '';
+            }
+
+            portfolioCards.forEach(function (card) {
+                var btn = card.querySelector('.btn');
+                btn.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    var img = card.querySelector('img');
+                    var title = card.querySelector('h5').textContent;
+                    portfolioModalInner.innerHTML = '';
+                    var image = document.createElement('img');
+                    image.src = img.src;
+                    image.alt = title;
+                    var titleEl = document.createElement('h5');
+                    titleEl.textContent = title;
+                    portfolioModalInner.appendChild(image);
+                    portfolioModalInner.appendChild(titleEl);
+                    portfolioModal.classList.add('active');
+                    disableBodyScroll();
+                    setTimeout(function () {
+                        image.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    }, 100);
+                });
+            });
+            function closeModal() {
+                portfolioModal.classList.remove('active');
+                enableBodyScroll();
+            }
+            portfolioModalClose.addEventListener('click', closeModal);
+            portfolioModal.addEventListener('click', function (e) {
+                if (e.target === portfolioModal) {
+                    closeModal();
+                }
+            });
+        });
+        // Initialize AOS animation
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Simple cart functionality
+        document.querySelectorAll('.btn-add-to-cart').forEach(button => {
+            button.addEventListener('click', function () {
+                const count = document.querySelector('.cart-count');
+                count.textContent = parseInt(count.textContent) + 1;
+
+                // Animation effect
+                this.textContent = 'Added to Cart!';
+                setTimeout(() => {
+                    this.textContent = 'Add to Cart';
+                }, 1500);
+            });
+        });
+        document.querySelectorAll('.btn-add-to-cart').forEach(button => {
+            button.addEventListener('click', function () {
+                const count = document.querySelector('.cart-count');
+                count.textContent = parseInt(count.textContent) + 1;
+
+                // Animation effect
+                this.textContent = 'Added to Cart!';
+                setTimeout(() => {
+                    this.textContent = 'Add to Cart';
+                }, 1500);
+            });
+        });
+    </script>
+
+</body>
+</html>
